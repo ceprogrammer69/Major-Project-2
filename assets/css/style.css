@@ -49,20 +49,61 @@ a:hover {
   transform: scale(1.2);
 }
 
-/* -----Promotion styles------ */
+/* -----Promotion styles------=========================================== */
 .promotion {
-  width: 600px;
+  width: 570px;
   height: auto;
 }
-#carouselPromo{
-  max-width: 500px;
-  height: auto;
+.product-item{
+  border: 1px solid rgba(219,219,219);
+}
+.product-img{
+  position: relative;
+  overflow: hidden;
+}
+.btns{
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  font-size: 15px;
+  font-weight: 300;
+  transition: all 0.3s ease-in-out;
+}
+.btns button{
+  border: none;
+  background-color: rgba(39,39,39);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.btns button:hover{
+  color: #fcb941;
+}
+.product-img:hover .btns{
+  bottom: 0;
 }
 
-
-
-
-
+.heart-icon{
+  position: absolute;
+  top: 16px;
+  right: 15px; 
+  font-size: 18px;
+}
+.product-type{
+  font-size: 13px;
+  opacity: 0.8;
+}
+.product-name{
+  transition: all 0.3s ease-in-out;
+}
+.product-name:hover{
+  color:  #fcb941!important;
+}
+.product-price{
+  color: #fcb941;
+}
+.rating{  
+  font-size: 13px;
+}
 /* ==========Footer Styling============== */
 /* STYLES SPECIFIC TO FOOTER  */
 .footer {
