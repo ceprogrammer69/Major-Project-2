@@ -2,7 +2,7 @@ const products = [
   // CPU
   {
     id: 0,
-    name: "CPU1",
+    name: "Intel Core i7-12700K Alder Lake",
     price: 16388.9,
     desc:
       "Intel Core i7-12700K Alder Lake 3.6GHz Twelve-Core LGA 1700 Boxed Processor - Heatsink Not Included",
