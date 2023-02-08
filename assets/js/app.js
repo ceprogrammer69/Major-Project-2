@@ -191,9 +191,9 @@ let generateShop3 =()=> {
 };
 generateShop3();
 
-// Motherboard
+// PC Case
 let generateShop4 =()=> {
-  let itemHTML = productMB.map((x)=>{
+  let itemHTML = productCASE.map((x)=>{
     return `
     <div class="col-xl-3 col-lg-4 col-md-6">
       <div class="card" style="width: 14rem;">
@@ -218,7 +218,7 @@ let generateShop4 =()=> {
   })
   .join("");
 
-  return (shopMB.innerHTML = `
+  return (shopCASE.innerHTML = `
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -249,9 +249,9 @@ let generateShop4 =()=> {
 };
 generateShop4();
 
-// Motherboard
+// PSU
 let generateShop5 =()=> {
-  let itemHTML = productMB.map((x)=>{
+  let itemHTML = productPSU.map((x)=>{
     return `
     <div class="col-xl-3 col-lg-4 col-md-6">
       <div class="card" style="width: 14rem;">
@@ -276,7 +276,7 @@ let generateShop5 =()=> {
   })
   .join("");
 
-  return (shopMB.innerHTML = `
+  return (shopPSU.innerHTML = `
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -307,9 +307,9 @@ let generateShop5 =()=> {
 };
 generateShop5();
 
-// Motherboard
+// GPU
 let generateShop6 =()=> {
-  let itemHTML = productMB.map((x)=>{
+  let itemHTML = productGPU.map((x)=>{
     return `
     <div class="col-xl-3 col-lg-4 col-md-6">
       <div class="card" style="width: 14rem;">
@@ -334,7 +334,7 @@ let generateShop6 =()=> {
   })
   .join("");
 
-  return (shopMB.innerHTML = `
+  return (shopGPU.innerHTML = `
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -365,9 +365,9 @@ let generateShop6 =()=> {
 };
 generateShop6();
 
-// Motherboard
+// SATA
 let generateShop7 =()=> {
-  let itemHTML = productMB.map((x)=>{
+  let itemHTML = productSATA.map((x)=>{
     return `
     <div class="col-xl-3 col-lg-4 col-md-6">
       <div class="card" style="width: 14rem;">
@@ -392,7 +392,7 @@ let generateShop7 =()=> {
   })
   .join("");
 
-  return (shopMB.innerHTML = `
+  return (shopSATA.innerHTML = `
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -423,9 +423,9 @@ let generateShop7 =()=> {
 };
 generateShop7();
 
-// Motherboard
+// NVME
 let generateShop8 =()=> {
-  let itemHTML = productMB.map((x)=>{
+  let itemHTML = productNVME.map((x)=>{
     return `
     <div class="col-xl-3 col-lg-4 col-md-6">
       <div class="card" style="width: 14rem;">
@@ -481,9 +481,9 @@ let generateShop8 =()=> {
 };
 generateShop8();
 
-// Motherboard
+// HDD
 let generateShop9 =()=> {
-  let itemHTML = productMB.map((x)=>{
+  let itemHTML = productHDD.map((x)=>{
     return `
     <div class="col-xl-3 col-lg-4 col-md-6">
       <div class="card" style="width: 14rem;">
@@ -508,7 +508,7 @@ let generateShop9 =()=> {
   })
   .join("");
 
-  return (shopMB.innerHTML = `
+  return (shopHDD.innerHTML = `
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -539,9 +539,9 @@ let generateShop9 =()=> {
 };
 generateShop9();
 
-// Motherboard
+// MONITOR
 let generateShop10 =()=> {
-  let itemHTML = productMB.map((x)=>{
+  let itemHTML = productMON.map((x)=>{
     return `
     <div class="col-xl-3 col-lg-4 col-md-6">
       <div class="card" style="width: 14rem;">
@@ -566,7 +566,7 @@ let generateShop10 =()=> {
   })
   .join("");
 
-  return (shopMB.innerHTML = `
+  return (shopMON.innerHTML = `
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -597,9 +597,9 @@ let generateShop10 =()=> {
 };
 generateShop10();
 
-// Motherboard
+// KEYBOARD
 let generateShop11 =()=> {
-  let itemHTML = productMB.map((x)=>{
+  let itemHTML = productKB.map((x)=>{
     return `
     <div class="col-xl-3 col-lg-4 col-md-6">
       <div class="card" style="width: 14rem;">
@@ -624,7 +624,7 @@ let generateShop11 =()=> {
   })
   .join("");
 
-  return (shopMB.innerHTML = `
+  return (shopKB.innerHTML = `
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -655,9 +655,9 @@ let generateShop11 =()=> {
 };
 generateShop11();
 
-// Motherboard
+// MOUSE
 let generateShop12 =()=> {
-  let itemHTML = productMB.map((x)=>{
+  let itemHTML = productMOUSE.map((x)=>{
     return `
     <div class="col-xl-3 col-lg-4 col-md-6">
       <div class="card" style="width: 14rem;">
@@ -682,7 +682,7 @@ let generateShop12 =()=> {
   })
   .join("");
 
-  return (shopMB.innerHTML = `
+  return (shopMOUSE.innerHTML = `
   <div class="modal-dialog">
     <div class="modal-content">
 
@@ -713,9 +713,9 @@ let generateShop12 =()=> {
 };
 generateShop12();
 
-// Motherboard
+// HEADSET
 let generateShop13 =()=> {
-  let itemHTML = productMB.map((x)=>{
+  let itemHTML = productHEADSET.map((x)=>{
     return `
     <div class="col-xl-3 col-lg-4 col-md-6">
       <div class="card" style="width: 14rem;">
@@ -740,7 +740,7 @@ let generateShop13 =()=> {
   })
   .join("");
 
-  return (shopMB.innerHTML = `
+  return (shopHEADSET.innerHTML = `
   <div class="modal-dialog">
     <div class="modal-content">
 
