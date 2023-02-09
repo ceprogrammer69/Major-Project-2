@@ -17,7 +17,7 @@ let shopHEADSET = document.getElementById("myModal13");
 
 // Render Products in the Modals
 
-// CPU
+// CPU Modal
 let generateShop1 =()=> {
   let itemHTML = productCPU.map((x)=>{
     return `
@@ -75,7 +75,7 @@ let generateShop1 =()=> {
 };
 generateShop1();
 
-// Motherboard
+// Motherboard Modal
 let generateShop2 =()=> {
   let itemHTML = productMB.map((x)=>{
     return `
@@ -133,7 +133,7 @@ let generateShop2 =()=> {
 };
 generateShop2();
 
-// Ram
+// Ram Modal
 let generateShop3 =()=> {
   let itemHTML = productRAM.map((x)=>{
     return `
@@ -191,7 +191,7 @@ let generateShop3 =()=> {
 };
 generateShop3();
 
-// PC Case
+// PC Case Modal
 let generateShop4 =()=> {
   let itemHTML = productCASE.map((x)=>{
     return `
@@ -249,7 +249,7 @@ let generateShop4 =()=> {
 };
 generateShop4();
 
-// PSU
+// PSU Modal
 let generateShop5 =()=> {
   let itemHTML = productPSU.map((x)=>{
     return `
@@ -307,7 +307,7 @@ let generateShop5 =()=> {
 };
 generateShop5();
 
-// GPU
+// GPU Modal
 let generateShop6 =()=> {
   let itemHTML = productGPU.map((x)=>{
     return `
@@ -365,7 +365,7 @@ let generateShop6 =()=> {
 };
 generateShop6();
 
-// SATA
+// SATA Modal
 let generateShop7 =()=> {
   let itemHTML = productSATA.map((x)=>{
     return `
@@ -423,7 +423,7 @@ let generateShop7 =()=> {
 };
 generateShop7();
 
-// NVME
+// NVME Modal
 let generateShop8 =()=> {
   let itemHTML = productNVME.map((x)=>{
     return `
@@ -481,7 +481,7 @@ let generateShop8 =()=> {
 };
 generateShop8();
 
-// HDD
+// HDD Modal
 let generateShop9 =()=> {
   let itemHTML = productHDD.map((x)=>{
     return `
@@ -539,7 +539,7 @@ let generateShop9 =()=> {
 };
 generateShop9();
 
-// MONITOR
+// MONITOR Modal
 let generateShop10 =()=> {
   let itemHTML = productMON.map((x)=>{
     return `
@@ -597,7 +597,7 @@ let generateShop10 =()=> {
 };
 generateShop10();
 
-// KEYBOARD
+// KEYBOARD Modal
 let generateShop11 =()=> {
   let itemHTML = productKB.map((x)=>{
     return `
@@ -655,7 +655,7 @@ let generateShop11 =()=> {
 };
 generateShop11();
 
-// MOUSE
+// MOUSE Modal
 let generateShop12 =()=> {
   let itemHTML = productMOUSE.map((x)=>{
     return `
@@ -713,7 +713,7 @@ let generateShop12 =()=> {
 };
 generateShop12();
 
-// HEADSET
+// HEADSET Modal
 let generateShop13 =()=> {
   let itemHTML = productHEADSET.map((x)=>{
     return `
