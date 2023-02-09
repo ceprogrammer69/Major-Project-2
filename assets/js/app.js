@@ -1,4 +1,4 @@
-// Modal Javascript Products
+// Get Element Modal ID
 let shopCPU = document.getElementById("myModal");
 let shopMB = document.getElementById("myModal2");
 let shopRAM = document.getElementById("myModal3");
