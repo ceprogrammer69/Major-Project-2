@@ -29,7 +29,7 @@ let generateShop1 =()=> {
           <p class="card-text">${x.desc}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center">₱${x.price}</li>
+          <li class="list-group-item text-center">₱${x.price.toLocaleString()}</li>
           <li class="list-group-item text-center">${x.brand}</li>
           <li class="list-group-item text-center">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -75,8 +75,6 @@ let generateShop1 =()=> {
 };
 generateShop1();
 
-// Rendering Products in the Motherboard Modal
-
 // Motherboard Modal
 let generateShop2 =()=> {
   let itemHTML = productMB.map((x)=>{
@@ -89,7 +87,7 @@ let generateShop2 =()=> {
           <p class="card-text">${x.desc}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center">₱${x.price}</li>
+          <li class="list-group-item text-center">₱${x.price.toLocaleString()}</li>
           <li class="list-group-item text-center">${x.brand}</li>
           <li class="list-group-item text-center">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -110,7 +108,7 @@ let generateShop2 =()=> {
 
         <!-- The Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">CPU</h4>
+            <h4 class="modal-title">Motherboard</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
@@ -147,7 +145,7 @@ let generateShop3 =()=> {
           <p class="card-text">${x.desc}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center">₱${x.price}</li>
+          <li class="list-group-item text-center">₱${x.price.toLocaleString()}</li>
           <li class="list-group-item text-center">${x.brand}</li>
           <li class="list-group-item text-center">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -168,7 +166,7 @@ let generateShop3 =()=> {
 
         <!-- The Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">CPU</h4>
+            <h4 class="modal-title">Ram</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
@@ -205,7 +203,7 @@ let generateShop4 =()=> {
           <p class="card-text">${x.desc}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center">₱${x.price}</li>
+          <li class="list-group-item text-center">₱${x.price.toLocaleString()}</li>
           <li class="list-group-item text-center">${x.brand}</li>
           <li class="list-group-item text-center">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -226,7 +224,7 @@ let generateShop4 =()=> {
 
         <!-- The Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">CPU</h4>
+            <h4 class="modal-title">PC Case</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
@@ -263,7 +261,7 @@ let generateShop5 =()=> {
           <p class="card-text">${x.desc}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center">₱${x.price}</li>
+          <li class="list-group-item text-center">₱${x.price.toLocaleString()}</li>
           <li class="list-group-item text-center">${x.brand}</li>
           <li class="list-group-item text-center">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -284,7 +282,7 @@ let generateShop5 =()=> {
 
         <!-- The Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">CPU</h4>
+            <h4 class="modal-title">Powersupply</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
@@ -321,7 +319,7 @@ let generateShop6 =()=> {
           <p class="card-text">${x.desc}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center">₱${x.price}</li>
+          <li class="list-group-item text-center">₱${x.price.toLocaleString()}</li>
           <li class="list-group-item text-center">${x.brand}</li>
           <li class="list-group-item text-center">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -342,7 +340,7 @@ let generateShop6 =()=> {
 
         <!-- The Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">CPU</h4>
+            <h4 class="modal-title">Graphics Card</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
@@ -379,7 +377,7 @@ let generateShop7 =()=> {
           <p class="card-text">${x.desc}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center">₱${x.price}</li>
+          <li class="list-group-item text-center">₱${x.price.toLocaleString()}</li>
           <li class="list-group-item text-center">${x.brand}</li>
           <li class="list-group-item text-center">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -400,7 +398,7 @@ let generateShop7 =()=> {
 
         <!-- The Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">CPU</h4>
+            <h4 class="modal-title">Sata SSD</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
@@ -437,7 +435,7 @@ let generateShop8 =()=> {
           <p class="card-text">${x.desc}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center">₱${x.price}</li>
+          <li class="list-group-item text-center">₱${x.price.toLocaleString()}</li>
           <li class="list-group-item text-center">${x.brand}</li>
           <li class="list-group-item text-center">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -452,13 +450,13 @@ let generateShop8 =()=> {
   })
   .join("");
 
-  return (shopMB.innerHTML = `
+  return (shopNVME.innerHTML = `
   <div class="modal-dialog">
     <div class="modal-content">
 
         <!-- The Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">CPU</h4>
+            <h4 class="modal-title">NVME SSD</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
@@ -495,7 +493,7 @@ let generateShop9 =()=> {
           <p class="card-text">${x.desc}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center">₱${x.price}</li>
+          <li class="list-group-item text-center">₱${x.price.toLocaleString()}</li>
           <li class="list-group-item text-center">${x.brand}</li>
           <li class="list-group-item text-center">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -516,7 +514,7 @@ let generateShop9 =()=> {
 
         <!-- The Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">CPU</h4>
+            <h4 class="modal-title">Hard drive</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
@@ -553,7 +551,7 @@ let generateShop10 =()=> {
           <p class="card-text">${x.desc}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center">₱${x.price}</li>
+          <li class="list-group-item text-center">₱${x.price.toLocaleString()}</li>
           <li class="list-group-item text-center">${x.brand}</li>
           <li class="list-group-item text-center">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -574,7 +572,7 @@ let generateShop10 =()=> {
 
         <!-- The Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">CPU</h4>
+            <h4 class="modal-title">Monitor</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
@@ -611,7 +609,7 @@ let generateShop11 =()=> {
           <p class="card-text">${x.desc}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center">₱${x.price}</li>
+          <li class="list-group-item text-center">₱${x.price.toLocaleString()}</li>
           <li class="list-group-item text-center">${x.brand}</li>
           <li class="list-group-item text-center">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -632,7 +630,7 @@ let generateShop11 =()=> {
 
         <!-- The Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">CPU</h4>
+            <h4 class="modal-title">Keyboard</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
@@ -669,7 +667,7 @@ let generateShop12 =()=> {
           <p class="card-text">${x.desc}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center">₱${x.price}</li>
+          <li class="list-group-item text-center">₱${x.price.toLocaleString()}</li>
           <li class="list-group-item text-center">${x.brand}</li>
           <li class="list-group-item text-center">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -690,7 +688,7 @@ let generateShop12 =()=> {
 
         <!-- The Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">CPU</h4>
+            <h4 class="modal-title">Mouse</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
@@ -727,7 +725,7 @@ let generateShop13 =()=> {
           <p class="card-text">${x.desc}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center">₱${x.price}</li>
+          <li class="list-group-item text-center">₱${x.price.toLocaleString()}</li>
           <li class="list-group-item text-center">${x.brand}</li>
           <li class="list-group-item text-center">
             <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
@@ -748,7 +746,7 @@ let generateShop13 =()=> {
 
         <!-- The Modal Header -->
           <div class="modal-header">
-            <h4 class="modal-title">CPU</h4>
+            <h4 class="modal-title">Headset</h4>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
 
