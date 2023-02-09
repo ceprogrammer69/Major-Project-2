@@ -42,7 +42,7 @@
           <a href="index.html"> <img src="./assets/img/mp2 icon darkblue-white-edited.jpg" class="img-fluid icon1 rounded" alt="brand-icon"> </a>
         </nav>
       </div>
-      <div class="col-3 col-sm-3 col-md-3 col-lg-3 ">
+      <div class="col-3 col-sm-3 col-md-3 col-lg-3 d-none ">
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-primary" type="submit">Search</button>
@@ -92,10 +92,11 @@
               
         <div class="row  border rounded sticky-top" id="headset">
 
-           <h4>Filter List</h4>
+           <h4>Search Product</h4>
 
-            <div class="col-12 d-flex text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis accusantium nesciunt temporibus tenetur voluptate culpa minus adipisci assumenda tempora iusto nihil necessitatibus aliquid soluta dolore commodi, consequuntur fugit laboriosam nostrum.
+            <div class="col-12 d-flex text-center flex-wrap">
+              <input class="form-control" placeholder="Search by name.." type="text" id="searchInput">
+              <button class="btn btn-primary mt-1" id="searchButton">Search</button>
             </div>     
                              
         </div>          
@@ -106,7 +107,7 @@
                 
               <div class="row mb-2 d-flex flex-center">
                 
-                <div class="col" id="product-card" style="display: flex; flex-wrap: wrap; justify-content: center;">
+                <div class="col" id="product-card" style="display: flex; flex-wrap: wrap;">
                   <!-- Render Product Cards here -->
                 
 

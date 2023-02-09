@@ -75,6 +75,8 @@ let generateShop1 =()=> {
 };
 generateShop1();
 
+// Rendering Products in the Motherboard Modal
+
 // Motherboard Modal
 let generateShop2 =()=> {
   let itemHTML = productMB.map((x)=>{
