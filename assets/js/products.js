@@ -33,7 +33,7 @@ searchButton.addEventListener("click", function() {
            product.desc.toLowerCase().includes(searchInput.value.toLowerCase()) ||
            product.price.toString().includes(searchInput.value);
   });
-  
+  // Rendering the Filtered Search Input
   productEl.innerHTML = filteredProducts.map((x) => {
     return `
     <div class="card m-1" style="width: 14rem;">
@@ -55,10 +55,6 @@ searchButton.addEventListener("click", function() {
 });
 
 
-searchInput.addEventListener("keyup", function(event) {
-  if (event.key === "Enter") {
-    renderProduct();
-  }
-});
+
 
 
