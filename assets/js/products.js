@@ -6,7 +6,7 @@ let renderProduct = () => {
     <div class="card m-1" style="width: 14rem;">
     <img src="${x.imgSrc}" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">Card title</h5>
+      <h5 class="card-title">${x.name}</h5>
       <p class="card-text">${x.desc}</p>
     </div>
     <ul class="list-group list-group-flush">
