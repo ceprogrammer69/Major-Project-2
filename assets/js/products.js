@@ -49,8 +49,6 @@ let increment = (id) => {
     search.item += 1;
   }
 
-
-
   // console.log(basket);
   update(id);
   localStorage.setItem("data", JSON.stringify(basket));  //Setting Data into Local Storage. data = key
