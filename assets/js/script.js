@@ -18,27 +18,6 @@ $('.owl-carousel').owlCarousel({
     }
 })  
 
-// var owl = $("#owl-carousel-1").owlCarousel({
-//     loop:true,
-//     margin:10,
-//     nav:true,
-//     autoplay:true,
-//     autoplayTimeout:1000,
-//     autoplayHoverPause:true,
-//     responsive:{
-//         0:{
-//             items:1
-//         },
-//         600:{
-//             items:3
-//         },
-//         1000:{
-//             items:3
-//         }
-//     }
-// })
-
-
 let basket = JSON.parse(localStorage.getItem("data")) || []; 
 
 // Calculation of cart quantity inside the Cart Icon

@@ -1334,7 +1334,7 @@ let productsALL = [
     price: 46199.45
     ,
     desc:
-      "MSI NVIDIA GeForce RTX 4070 Ti Ventus 3X Overclocked Triple Fan 12GB GDDR6X PCIe 4.0 Graphics Card ",
+      "MSI NVIDIA GeForce RTX 4070 Ti Ventus 3X Overclocked Triple Fan 12GB GDDR6X PCIe 4.0 Graphics Card",
     imgSrc: "./assets/img/gpu2.jpg",
     brand: "MSI ",  
   },
@@ -1452,7 +1452,7 @@ let productsALL = [
     name: "Samsung 870 EVO 500GB",
     price: 2749.45,
     desc:
-      "Samsung 870 EVO 500GB SSD 3-bit MLC V-NAND SATA III 6Gb/s 2.5 Internal Solid State Drive ",
+      "Samsung 870 EVO 500GB SSD 3-bit MLC V-NAND SATA III 6Gb/s 2.5 Internal Solid State Drive",
     imgSrc: "./assets/img/sata6.jpg",
     brand: "Samsung ",  
   },
@@ -1461,7 +1461,7 @@ let productsALL = [
     name: "Inland Professional 256GB",
     price: 1099.45,
     desc:
-      "Inland Professional 256GB SSD 3D TLC NAND SATA 3.0 6 GBps 2.5 Inch 7mm Internal Solid State Drive ",
+      "Inland Professional 256GB SSD 3D TLC NAND SATA 3.0 6 GBps 2.5 Inch 7mm Internal Solid State Drive",
     imgSrc: "./assets/img/sata7.jpg",
     brand: "Inland ",  
   },
