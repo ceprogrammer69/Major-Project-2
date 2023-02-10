@@ -43,12 +43,12 @@ let generateCartItems = () => {
     } )
   }
   else{
-    shoppingCart.innerHTML = ``
+    shoppingCart.innerHTML = `
+    <p class="text m-0">No Items in your cart</p>
+    `;
     label.innerHTML = ` 
-    <h2>Cart is Empty</h2>
-    <a href="index.html">
-    <button class="btn btn-primary HomeBtn">Back to Home</button>
-    </a>
+    <p class="text m-0">Cart(<span>0</span> items): <span>₱ 0.00</span></p>
+        <button class="btn btn-outline-dark disabled">Checkout</button>
     `;
 
   }
@@ -124,10 +124,14 @@ let TotalAmount = () => {
     }).reduce((x,y)=>x+y,0);
     // console.log(amount);
     label.innerHTML = `
-    <h2>Total Bill: ₱ ${amount.toFixed(2)}</h2>
+    <div class="col-lg-4 col-md-12 col-sm-12 border rounded  m-">
+       <p class="text m-0">Cart(<span>0</span> items): <span>₱${amount.toLocaleString()}</span></p>
+       <button class="btn btn-outline-dark ">Checkout</button>
+      </div>
     
     `;
   }
   else return ;
 };
 TotalAmount();
+
