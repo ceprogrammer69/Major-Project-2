@@ -13,7 +13,7 @@ let shopKB = document.getElementById("myModal11");
 let shopMOUSE = document.getElementById("myModal12");
 let shopHEADSET = document.getElementById("myModal13");
 
-
+let cart = JSON.parse(localStorage.getItem("data")) || [];
 
 // Render Products in the Modals
 
@@ -36,7 +36,7 @@ let generateShop1 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button onclick="increment(${x.id})" type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -94,7 +94,7 @@ let generateShop2 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button onclick="increment(${x.id}) type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@ let generateShop3 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button onclick="increment(${x.id}) type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -210,7 +210,7 @@ let generateShop4 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button onclick="increment(${x.id}) type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -268,7 +268,7 @@ let generateShop5 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button onclick="increment(${x.id}) type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -326,7 +326,7 @@ let generateShop6 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button onclick="increment(${x.id}) type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -384,7 +384,7 @@ let generateShop7 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button onclick="increment(${x.id}) type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -442,7 +442,7 @@ let generateShop8 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button onclick="increment(${x.id}) type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -500,7 +500,7 @@ let generateShop9 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button onclick="increment(${x.id}) type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -558,7 +558,7 @@ let generateShop10 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button onclick="increment(${x.id}) type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -616,7 +616,7 @@ let generateShop11 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button onclick="increment(${x.id}) type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -674,7 +674,7 @@ let generateShop12 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button onclick="increment(${x.id}) type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -732,7 +732,7 @@ let generateShop13 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button onclick="increment(${x.id}) type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -771,17 +771,25 @@ let generateShop13 =()=> {
 };
 generateShop13();
 
+//increment Function from scratch
+function increment(id) {
+  console.log(`The id of the item clicked is: ${id}`);
+  // Add your logic for incrementing the item here
+    let item = productCPU.find((x) => x.id === id);
 
-let basket = JSON.parse(localStorage.getItem("data")) || []; 
+  let index = cart.findIndex((x) => x.id === id);
 
-// Calculation of cart quantity inside the Cart Icon
+  if (index === -1) {
+    item.qty = 1;
+    cart.push(item);
+  } else {
+    cart[index].qty++;
+  }
 
-let calculation =()=>{
-  let cartIcon = document.getElementById("cartAmount");
-  cartIcon.innerHTML = basket.map((x)=> x.item ).reduce((x,y)=>x+y,0) // Changing cartIcon Number
-  //console.log(basket.map((x)=> x.item ).reduce((x,y)=>x+y,0));
-};
-calculation(); // everytime the application loads, calculation() runs
+  console.log(cart);
+}
+
+
 
 
 

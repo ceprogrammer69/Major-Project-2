@@ -22,12 +22,12 @@ let generateCartItems = () => {
       let search = productsALL.find((y)=> y.id === id) || [];
       return `
       
-      <div class="card border-dark rounded mb-3" style="width: 18rem;">
+      <div class="card border-dark rounded mb-3 " style="width: 18rem;">
         <img style="width:150px;" src=${search.imgSrc} class="card-img-top text-center" alt=${search.imgSrc}>
         <div class="card-body">
           <h5 class="card-title">${search.name}</h5>
           <p class="card-text">${search.desc}</p>
-      </div>
+        </div>
         <ul class="list-group list-group-flush">
            <li class="list-group-item">₱${(parseFloat(item) * parseFloat(search.price)).toLocaleString()}</li>
            <li class="list-group-item">Quantity: <i onclick="increment(${id})" class="bi bi-plus-square"></i><span id="${id}">
@@ -124,11 +124,8 @@ let TotalAmount = () => {
     }).reduce((x,y)=>x+y,0);
     // console.log(amount);
     label.innerHTML = `
-    <div class="col-lg-4 col-md-12 col-sm-12 border rounded  m-">
-       <p class="text m-0">Cart(<span>0</span> items): <span>₱${amount.toLocaleString()}</span></p>
-       <button class="btn btn-outline-dark ">Checkout</button>
-      </div>
-    
+       <h2><p class="text m-0">Total Price: <span>₱${amount.toLocaleString()}</span></p></h2>
+       <button class="btn btn-outline-dark">Checkout</button>
     `;
   }
   else return ;
