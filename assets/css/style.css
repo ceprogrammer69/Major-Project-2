@@ -186,7 +186,7 @@ a:hover {
 .footer {
   width: 100%;
   height: auto;
-  background-color: #041444;
+  background-color: 041444;
 }
 .footer .col {
   width: 300px;
@@ -204,7 +204,7 @@ a:hover {
   font-size: 12px;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
-  color: rgba(255,255,255,0.2);
+  color:  rgb(214,215,217);
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.250em;
@@ -215,7 +215,7 @@ a:hover {
   padding: 0;
 }
 .footer .col ul li a{
-  color: #999999;
+  color: rgb(214,215,217);
   font-size: 14px;
   font-family: inherit;
   font-weight: bold;
@@ -226,7 +226,7 @@ a:hover {
   -moz-transition: .2s;
 }
 .footer .col ul li{
-  color: #999999;
+  color:rgb(214,215,217);
   font-size: 14px;
   font-family: inherit;
   font-weight: bold;
