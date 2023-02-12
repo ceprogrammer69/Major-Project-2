@@ -39,8 +39,8 @@ let generateCartItems = () => {
         </div>
       </div>
 
-      `
-    } )
+      `;
+    } ).join("");
   }
   else{
     shoppingCart.innerHTML = `
