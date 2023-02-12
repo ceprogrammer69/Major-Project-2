@@ -56,7 +56,7 @@ let generateCartItems = () => {
 
 generateCartItems();
 
-// Increment Decrement and Update Functions (continue!)
+// Increment Decrement and Update Functions
 //increment Function
 let increment = (id) => {
   let search = basket.find((x)=> x.id === id ) // check if there is item in the basket similar to selected item
