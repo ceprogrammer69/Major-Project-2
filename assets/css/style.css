@@ -49,6 +49,20 @@ a:hover {
   transform: scale(1.2);
 }
 
+.thumbnail{
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size:19px;
+ 
+}
+.bottom-left {
+  position: absolute;
+  top: 400%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #e1e1e1;
+}
 /* -----Promotion styles------=========================================== */
 .promotion{
   width: 700px;
