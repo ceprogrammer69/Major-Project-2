@@ -10,8 +10,8 @@ let renderProduct = () => {
     let { id, name, price, desc, imgSrc, brand } = x;
     let search = basket.find((x)=> x.id === id) || [] // search for similar id in the local storage if it exist, place the corresonding item in the quantity
     return `
-    <div class="card m-1" style="width: 14rem;">
-    <img src="${imgSrc}" class="card-img-top" alt="...">
+    <div class="card m-1 d-sm-block" style="width: 14rem;">
+    <img src="${imgSrc}" class="card-img-top" alt=${name}>
     <div class="card-body">
       <h5 class="card-title">${name}</h5>
       <p class="card-text">${desc}</p>
@@ -138,7 +138,7 @@ searchButton.addEventListener("click", function() {
     let { id, name, price, desc, imgSrc, brand } = x;
     let search = basket.find((x)=> x.id === id) || [];
     return `
-    <div class="card m-1" style="width: 14rem;">
+    <div class="card m-1 d-sm-block" style="width: 14rem;">
     <img src="${imgSrc}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">${name}</h5>

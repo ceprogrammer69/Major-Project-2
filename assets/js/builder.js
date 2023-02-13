@@ -75,11 +75,6 @@ let generateShop1 =()=> {
 };
 generateShop1();
 
-
-
-
-
-
 // Motherboard Modal
 let generateShop2 =()=> {
   let itemHTML = productMB.map((x)=>{
@@ -833,7 +828,7 @@ let generateBuilderCart = () => {
       </div>
 
       <div class="col-12 text-center">
-        <h3>Build Total: </h3> <p id="build-total"><h3>0.00</h3></p>
+        <h3>Build Total: </h3> <p id=${amount.toLocaleString()}><h3>0.00</h3></p>
         <button type="button" class="btn btn-success mb-1">ADD TO CART</button>
       </div>
   

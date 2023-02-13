@@ -2,8 +2,6 @@ let label = document.getElementById("label");
 let shoppingCart = document.getElementById("shopping-cart");
 
 
-
-
 let basket = JSON.parse(localStorage.getItem("data")) || []; 
 
 // Calculation of cart quantity inside the Cart Icon
