@@ -836,8 +836,8 @@ let TotalAmount = () => {
     </div>
 
     <div class="col-12 text-center">
-      <h3>Build Total: </h3> <p h3>₱${amount.toLocaleString()}</h3></p>
-      <button type="button" class="btn btn-success mb-1">ADD TO CART</button>
+    <h3>Build Total: </h3> <p h3>₱${amount.toLocaleString()}</h3></p>
+      <a href="cart.html"><button type="button" class="btn btn-success mb-1">PROCEED TO CHECKOUT</button></a>
     </div>
     `;
   }
@@ -845,17 +845,15 @@ let TotalAmount = () => {
     cartBuilder.innerHTML = ` 
     <h4>Build List</h4>
     <div class="col-12 d-flex text-center">
-      <div class="col">
-        <button type="button" class="btn btn-dark m-2 btn-sm " data-bs-toggle="modal" data-bs-target="#myModal13" id="print-list">Print List</button>
-      </div>
-      <div class="col">
+      <div class="col-12 text-start">
         <button type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Build</button>
       </div> 
     </div>
 
     <div class="col-12 text-center">
-      <h3>Build Total: </h3> <p><h3>cart has no item</h3></p>
-      <button type="button" class="btn btn-success mb-1">ADD TO CART</button>
+      <h3>Build Total: 
+      </h3> <p><h3>Cart has no item</h3></p>
+      <button type="button" class="btn btn-secondary mb-1 muted">PROCEED TO CHECKOUT</button>
     </div>
     `;
 
