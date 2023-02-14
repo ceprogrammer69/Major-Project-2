@@ -812,7 +812,7 @@ let removeItem = (id) => {
 };
 
 
-
+//PC Builder Cart
 let cartBuilder = document.getElementById("builder-cart");
 let masterProductArray = [...productCPU, ...productMB, ...productRAM, ...productCASE, ...productPSU, ...productGPU, ...productSATA, ...productNVME, ...productHDD, ...productMON, ...productKB, ...productMOUSE, ...productHEADSET];
 
