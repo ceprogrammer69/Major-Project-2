@@ -101,63 +101,75 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <a href="#" data-toggle="modal" data-target="#image1">
+        <a href="#" data-toggle="modal" data-target="#image1" class="thumbnail">
           <img src="./assets/img/graphics card.jpg" class="img-thumbnail">
+          <div class="bottom-left">GRAPHICS CARD</div>
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#" data-toggle="modal" data-target="#image2">
+        <a href="#" data-toggle="modal" data-target="#image2" class="thumbnail">
           <img src="./assets/img/keyboard.jpg" class="img-thumbnail">
+          <div class="bottom-left">KEYBOARD</div>
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#" data-toggle="modal" data-target="#image2">
+        <a href="#" data-toggle="modal" data-target="#image2" class="thumbnail">
           <img src="./assets/img/laptop.jpg" class="img-thumbnail">
+          <div class="bottom-left">LAPTOP</div>
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#" data-toggle="modal" data-target="#image2">
+        <a href="#" data-toggle="modal" data-target="#image2" class="thumbnail">
           <img src="./assets/img/monitor.jpg" class="img-thumbnail">
+          <div class="bottom-left">MONITOR</div>
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#" data-toggle="modal" data-target="#image2">
+        <a href="#" data-toggle="modal" data-target="#image2" class="thumbnail">
           <img src="./assets/img/motherboard.jpg" class="img-thumbnail">
+          <div class="bottom-left">MOTHERBOARD</div>
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#" data-toggle="modal" data-target="#image2">
+        <a href="#" data-toggle="modal" data-target="#image2" class="thumbnail">
           <img src="./assets/img/mouse.jpg" class="img-thumbnail">
+          <div class="bottom-left">MOUSE</div>
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#" data-toggle="modal" data-target="#image2">
+        <a href="#" data-toggle="modal" data-target="#image2" class="thumbnail">
           <img src="./assets/img/powersupply.jpg" class="img-thumbnail">
+          <div class="bottom-left">POWER SUPPLY</div>
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#" data-toggle="modal" data-target="#image2">
+        <a href="#" data-toggle="modal" data-target="#image2" class="thumbnail">
           <img src="./assets/img/processor.jpg" class="img-thumbnail">
+          <div class="bottom-left">PROCESSOR</div>
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#" data-toggle="modal" data-target="#image2">
+        <a href="#" data-toggle="modal" data-target="#image2" class="thumbnail">
           <img src="./assets/img/ram.jpg" class="img-thumbnail">
+          <div class="bottom-left">RAM</div>
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#" data-toggle="modal" data-target="#image2">
+        <a href="#" data-toggle="modal" data-target="#image2" class="thumbnail">
           <img src="./assets/img/ssd.jpg" class="img-thumbnail">
+          <div class="bottom-left">SSD</div>
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#" data-toggle="modal" data-target="#image2">
+        <a href="#" data-toggle="modal" data-target="#image2" class="thumbnail">
           <img src="./assets/img/pcfurnitures.jpg" class="img-thumbnail">
+          <div class="bottom-left">PC FURNITURES</div>
         </a>
       </div>
       <div class="col-md-3">
-        <a href="#" data-toggle="modal" data-target="#image2">
+        <a href="#" data-toggle="modal" data-target="#image2" class="thumbnail">
           <img src="./assets/img/peripherals.jpg" class="img-thumbnail">
+          <div class="bottom-left">PERIPHERALS</div>
         </a>
       </div>
     </div>
@@ -639,6 +651,38 @@ crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
    <!-- FONT AWESOME Link -->
    <script src="https://kit.fontawesome.com/10eaae9361.js" crossorigin="anonymous"></script>
+
+   
+   <!-- Messenger Chat Plugin Code -->
+   <div id="fb-root"></div>
+
+   <!-- Your Chat Plugin code -->
+   <div id="fb-customer-chat" class="fb-customerchat">
+   </div>
+
+   <script>
+     var chatbox = document.getElementById('fb-customer-chat');
+     chatbox.setAttribute("page_id", "114069321601583");
+     chatbox.setAttribute("attribution", "biz_inbox");
+   </script>
+
+   <!-- Your SDK code -->
+   <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         xfbml            : true,
+         version          : 'v16.0'
+       });
+     };
+
+     (function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+   </script>
 </body>
 <footer>
 <!-- FOOTER START -->
