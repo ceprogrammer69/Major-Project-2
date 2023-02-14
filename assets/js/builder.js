@@ -43,7 +43,7 @@ function generateProductModal(productArray) {
         <li class="list-group-item">${brand}</li>
       </ul>
       <div class="card-body"> 
-        <button onclick="increment(${id})" class="btn btn-outline-dark">Add to Cart </button>
+        <button onclick="increment(${id})" class="btn btn-outline-dark" data-bs-dismiss="modal">Add to Cart </button>
         <span><i onclick="increment(${id})" class="bi bi-plus-square"></i><span id="${id}">
         ${search.item === undefined? 0: search.item} 
         </span><i onclick="decrement(${id})" class="bi bi-dash-square"></i>
@@ -81,6 +81,7 @@ function generateProductModal(productArray) {
     </div>
   `;
 }
+
 
 const shop1Modal = generateProductModal(productCPU);
 const shop2Modal = generateProductModal(productMB);
@@ -838,17 +839,6 @@ let update = (id) => {
   TotalAmount();
 };
 
-//Clear build
-let removeItem = (id) => {
-  let selectedItem = id;
-  //console.log(selectedItem);
-  basket = basket.filter((x)=>x.id !== selectedItem);
-  generateCartItems();
-  TotalAmount();
-  calculation();
-  localStorage.setItem("data", JSON.stringify(basket));
-};
-
 
 //PC Builder Cart
 let cartBuilder = document.getElementById("builder-cart");
@@ -865,9 +855,7 @@ let TotalAmount = () => {
     cartBuilder.innerHTML = `
     <h4>Build List</h4>
     <div class="col-12 d-flex text-center">
-      <div class="col-12 text-start">
-        <button onclick="clearCart()"  type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Build</button>
-       </div> 
+
     </div>
 
     <div class="col-12 text-center">
@@ -880,9 +868,7 @@ let TotalAmount = () => {
     cartBuilder.innerHTML = ` 
     <h4>Build List</h4>
     <div class="col-12 d-flex text-center">
-      <div class="col-12 text-start">
-        <button onclick="clearCart()" type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Build</button>
-      </div> 
+      
     </div>
 
     <div class="col-12 text-center">
@@ -896,6 +882,17 @@ let TotalAmount = () => {
   }
 };
 TotalAmount();
+
+
+let removeItem = (id) => {
+  let selectedItem = id;
+  //console.log(selectedItem);
+  basket = basket.filter((x)=>x.id !== selectedItem);
+  generateProductModal();
+  TotalAmount();
+  calculation();
+  localStorage.setItem("data", JSON.stringify(basket));
+};
 
 let clearCart = () => {
   basket = [];

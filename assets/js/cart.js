@@ -48,9 +48,9 @@ let generateCartItems = () => {
     `;
     label.innerHTML = ` 
     <h4>Build List</h4>
-    <div class="col-12 d-flex text-center">
+    <div class="col-12 d-flex text-center"><br><br>
       <div class="col-12 text-start">
-        <button type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Build</button>
+      
       </div> 
     </div>
 
@@ -137,7 +137,7 @@ let TotalAmount = () => {
     <h4>Build List</h4>
     <div class="col-12 d-flex text-center">
       <div class="col-12 text-start">
-        <button onclick="clearCart()"  type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Cart</button>
+        
        </div> 
     </div>
 
