@@ -13,20 +13,6 @@ let shopKB = document.getElementById("myModal11");
 let shopMOUSE = document.getElementById("myModal12");
 let shopHEADSET = document.getElementById("myModal13");
 
-const shop1Modal = generateProductModal(productCPU);
-const shop2Modal = generateProductModal(productMB);
-const shop3Modal = generateProductModal(productRAM);
-const shop4Modal = generateProductModal(productCASE);
-const shop5Modal = generateProductModal(productPSU);
-const shop6Modal = generateProductModal(productGPU);
-const shop7Modal = generateProductModal(productSATA);
-const shop8Modal = generateProductModal(productNVME);
-const shop9Modal = generateProductModal(productHDD);
-const shop10Modal = generateProductModal(productMON);
-const shop11Modal = generateProductModal(productKB);
-const shop12Modal = generateProductModal(productMOUSE);
-const shop13Modal = generateProductModal(productHEADSET);
-
 
 let basket = JSON.parse(localStorage.getItem("data")) || []; 
 
@@ -95,6 +81,21 @@ function generateProductModal(productArray) {
     </div>
   `;
 }
+
+const shop1Modal = generateProductModal(productCPU);
+const shop2Modal = generateProductModal(productMB);
+const shop3Modal = generateProductModal(productRAM);
+const shop4Modal = generateProductModal(productCASE);
+const shop5Modal = generateProductModal(productPSU);
+const shop6Modal = generateProductModal(productGPU);
+const shop7Modal = generateProductModal(productSATA);
+const shop8Modal = generateProductModal(productNVME);
+const shop9Modal = generateProductModal(productHDD);
+const shop10Modal = generateProductModal(productMON);
+const shop11Modal = generateProductModal(productKB);
+const shop12Modal = generateProductModal(productMOUSE);
+const shop13Modal = generateProductModal(productHEADSET);
+
 
 // Display the modals
 shopCPU.innerHTML = shop1Modal;
