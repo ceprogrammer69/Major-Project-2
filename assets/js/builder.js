@@ -43,7 +43,7 @@ function generateProductModal(productArray) {
         <li class="list-group-item">${brand}</li>
       </ul>
       <div class="card-body"> 
-        <button onclick="increment(${id})" class="btn btn-outline-dark" data-bs-dismiss="modal">Add to Cart </button>
+        <button onclick="increment(${id}); this.disabled=true;" class="btn btn-outline-dark" data-bs-dismiss="modal">Add to Cart </button>
         <span><i onclick="increment(${id})" class="bi bi-plus-square"></i><span id="${id}">
         ${search.item === undefined? 0: search.item} 
         </span><i onclick="decrement(${id})" class="bi bi-dash-square"></i>
