@@ -83,13 +83,7 @@ let generateShop1 =()=> {
 };
 generateShop1();
 
-// const changeDivContent = (id, content) => {
-//   document.getElementById(id).innerHTML = content;
-// };
 
-// document.getElementById("myButton").onclick = () => {
-//   changeDivContent("cpu", "This is my new content!");
-// };
 
 
 // Motherboard Modal
@@ -789,7 +783,24 @@ let generateShop13 =()=> {
 };
 generateShop13();
 
+//increment Function
+let increment = (id) => {
+  let search = basket.find((x)=> x.id === id ) // check if there is item in the basket similar to selected item
 
+  if(search === undefined){
+    basket.push({
+      id : id,
+      item: 1,
+    });
+  }
+  else{
+    search.item += 1;
+  }
+
+  // console.log(basket);
+  update(id);
+  localStorage.setItem("data", JSON.stringify(basket));  //Setting Data into Local Storage. data = key
+};
 
 //Updating InnerHTML
 let update = (id) => {
@@ -827,12 +838,9 @@ let TotalAmount = () => {
     cartBuilder.innerHTML = `
     <h4>Build List</h4>
     <div class="col-12 d-flex text-center">
-      <div class="col">
-        <button type="button" class="btn btn-dark m-2 btn-sm " data-bs-toggle="modal" data-bs-target="#myModal13" id="print-list">Print List</button>
-      </div>
-      <div class="col">
+      <div class="col-12 text-start">
         <button type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Build</button>
-      </div> 
+       </div> 
     </div>
 
     <div class="col-12 text-center">
