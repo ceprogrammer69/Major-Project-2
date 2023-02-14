@@ -800,6 +800,17 @@ let update = (id) => {
   TotalAmount();
 };
 
+//Clear build
+let removeItem = (id) => {
+  let selectedItem = id;
+  //console.log(selectedItem);
+  basket = basket.filter((x)=>x.id !== selectedItem);
+  generateCartItems();
+  TotalAmount();
+  calculation();
+  localStorage.setItem("data", JSON.stringify(basket));
+};
+
 
 
 let cartBuilder = document.getElementById("builder-cart");
