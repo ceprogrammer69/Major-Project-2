@@ -14,8 +14,15 @@ let shopMOUSE = document.getElementById("myModal12");
 let shopHEADSET = document.getElementById("myModal13");
 
 
+let basket = JSON.parse(localStorage.getItem("data")) || []; 
 
-let cart = [];
+// Calculation of cart quantity inside the Cart Icon
+let calculation =()=>{
+  let cartIcon = document.getElementById("cartAmount");
+  cartIcon.innerHTML = basket.map((x)=> x.item ).reduce((x,y)=>x+y,0) // Changing cartIcon Number
+  //console.log(basket.map((x)=> x.item ).reduce((x,y)=>x+y,0));
+};
+calculation(); // everytime the application loads, calculation() runs
 
 // Render Products in the Modals and the DOM
 
@@ -23,6 +30,7 @@ let cart = [];
 let generateShop1 =()=> {
   let itemHTML = productCPU.map((x)=>{
     let {id, name, imgSrc, desc, price, brand} = x;
+    let search = basket.find((x)=> x.id === id) || []
     return `
     <div class="col-xl-3 col-lg-4 col-md-6">
       <div class="card" style="width: 14rem;">
@@ -39,7 +47,7 @@ let generateShop1 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button onclick="addToCart(${id})" type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button onclick=increment(${id} type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -75,6 +83,15 @@ let generateShop1 =()=> {
 };
 generateShop1();
 
+// const changeDivContent = (id, content) => {
+//   document.getElementById(id).innerHTML = content;
+// };
+
+// document.getElementById("myButton").onclick = () => {
+//   changeDivContent("cpu", "This is my new content!");
+// };
+
+
 // Motherboard Modal
 let generateShop2 =()=> {
   let itemHTML = productMB.map((x)=>{
@@ -95,7 +112,7 @@ let generateShop2 =()=> {
           </li>
         </ul>
         <div class="card-body text-center">
-          <button onclick="addToCart(${id}) type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
+          <button id="mybtn2" type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Add</button>
         </div>
       </div>
     </div>
@@ -772,101 +789,31 @@ let generateShop13 =()=> {
 };
 generateShop13();
 
-// increment Function from scratch
-function increment(id) {
-  let selectedItem = id;
-  let search = cart.find((x)=> x.id === selectedItem.id ); // check if there is item in the cart similar to selected item
-  if(search === undefined){
-    cart.push({
-      id : selectedItem.id,
-      item: 1,
-    });
-  }
-  else{
-    search.item += 1;
-  }
-  //console.log(cart);
-  update(selectedItem.id);
-};
 
-//decrement
-let decrement = () => {
-  let selectedItem = id;
-  let search = cart.find((x)=> x.id === selectedItem.id ); // check if there is item in the cart similar to selected item
-  if(search.item === 0) return; //to stop decrementing the item to negative quantity
-  else{
-    search.item -= 1;
-  }
- // console.log(cart);
-  update();
-};
 
-//update function
+//Updating InnerHTML
 let update = (id) => {
-  let search = cart.find((x)=>x.id === id);
-  console.log(search.item);
+  let search = basket.find((x)=>x.id === id);
+  // console.log(search.item);
+  document.getElementById(id).innerHTML = search.item;
+  calculation();
+  TotalAmount();
 };
 
 
 
 let cartBuilder = document.getElementById("builder-cart");
-let generateBuilderCart = () => {
-  if(cart.length !==0){
-    return  cartBuilder.innerHTML = cart.map((x)=>{
-      let {id, item} = x;
-      let search = productsALL.find((y)=> y.id === id) || [];
-      return `
-      
-      <h4>Build List</h4>
-      <div class="col-12 d-flex text-center">
-        <div class="col">
-          <button type="button" class="btn btn-dark m-2 btn-sm " data-bs-toggle="modal" data-bs-target="#myModal13" id="print-list">Print List</button>
-        </div>
-        <div class="col">
-          <button type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Build</button>
-        </div> 
-      </div>
-
-      <div class="col-12 text-center">
-        <h3>Build Total: </h3> <p id=${amount.toLocaleString()}><h3>0.00</h3></p>
-        <button type="button" class="btn btn-success mb-1">ADD TO CART</button>
-      </div>
-  
-      `
-    } )
-  }
-  else{
-    cartBuilder.innerHTML = 
-    `     
-          <h4>Your Total Build Price:</h4>
-          <div class="col-12 d-flex text-center">
-            <div class="col">
-                <button type="button" class="btn btn-dark m-2 btn-sm " id="print-list">Print List</button>
-            </div>
-            <div class="col">
-                <button type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Build</button>
-             </div> 
-            </div>
-
-            <div class="col-12 text-center">
-              <h3>Build Total: </h3> <p id="build-total"><h3>0.00</h3></p>
-              <button type="button" class="btn btn-success mb-1">ADD TO CART</button>
-           </div>
-    `;
-   
-  };
-};
-generateBuilderCart();
+let masterProductArray = [...productCPU, ...productMB, ...productRAM, ...productCASE, ...productPSU, ...productGPU, ...productSATA, ...productNVME, ...productHDD, ...productMON, ...productKB, ...productMOUSE, ...productHEADSET];
 
 let TotalAmount = () => {
-  if(cart.length !== 0){
-    let amount = cart.map((x) =>{
+  if(basket.length !== 0){
+    let amount = basket.map((x) =>{
       let {item, id} = x;
-      let search = productsALL.find((y)=> y.id === id) || [];
+      let search = masterProductArray.find((y)=> y.id === id) || [];
       return item + search.price;
     }).reduce((x,y)=>x+y,0);
-    // console.log(amount);
-    label.innerHTML = `
+    
+    cartBuilder.innerHTML = `
     <h4>Build List</h4>
     <div class="col-12 d-flex text-center">
       <div class="col">
@@ -878,27 +825,33 @@ let TotalAmount = () => {
     </div>
 
     <div class="col-12 text-center">
-      <h3>Build Total: </h3> <p id=${amount.toLocaleString()}><h3>0.00</h3></p>
+      <h3>Build Total: </h3> <p h3>₱${amount.toLocaleString()}</h3></p>
       <button type="button" class="btn btn-success mb-1">ADD TO CART</button>
     </div>
     `;
   }
-  else return ;
+  else{
+    cartBuilder.innerHTML = ` 
+    <h4>Build List</h4>
+    <div class="col-12 d-flex text-center">
+      <div class="col">
+        <button type="button" class="btn btn-dark m-2 btn-sm " data-bs-toggle="modal" data-bs-target="#myModal13" id="print-list">Print List</button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Build</button>
+      </div> 
+    </div>
+
+    <div class="col-12 text-center">
+      <h3>Build Total: </h3> <p><h3>cart has no item</h3></p>
+      <button type="button" class="btn btn-success mb-1">ADD TO CART</button>
+    </div>
+    `;
+
+  }
 };
 TotalAmount();
 
-let calculation =()=>{
-  let cartIcon = document.getElementById("cartAmount");
-  //cartIcon.innerHTML = cart.map((x)=> x.item ).reduce((x,y)=>x+y,0) // Changing cartIcon Number
-  //console.log(basket.map((x)=> x.item ).reduce((x,y)=>x+y,0));
-  cartIcon.innerHTML= 100
-};
- // everytime the application loads, calculation() runs
 
 
-
-
-
-
-      
 
