@@ -7,7 +7,9 @@ let productCPU = [
     desc:
       "Intel Core i7-12700K Alder Lake 3.6GHz Twelve-Core LGA 1700 Boxed Processor - Heatsink Not Included",
     imgSrc: "./assets/img/cpu1.jpg",
+     category: "CPU",
     brand: "Intel",
+   
   },
   {
     id: 1,
@@ -16,6 +18,7 @@ let productCPU = [
     desc:
       "Intel Core i7-13700K Raptor Lake 3.4GHz Sixteen-Core LGA 1700 Boxed Processor - Heatsink Not Included",
     imgSrc: "./assets/img/cpu2.jpg",
+     category: "CPU",
     brand: "Intel",
   },
   {
@@ -25,6 +28,7 @@ let productCPU = [
     desc:
       "AMD Ryzen 7 5800X Vermeer 3.8GHz 8-Core AM4 Boxed Processor - Heatsink Not Included",
     imgSrc: "./assets/img/cpu3.jpg",
+     category: "CPU",
     brand: "AMD",
   },
   {
@@ -34,6 +38,7 @@ let productCPU = [
     desc:
       "AMD Ryzen 7 7700X Raphael AM5 4.5GHz 8-Core Boxed Processor - Heatsink Not Included",
     imgSrc: "./assets/img/cpu4.jpg",
+     category: "CPU",
     brand: "AMD",
   },
   {
@@ -43,6 +48,7 @@ let productCPU = [
     desc:
       "Intel Core i9-13900K Raptor Lake 3.0GHz Twenty Four-Core LGA 1700 Boxed Processor - Heatsink Not Included ",
     imgSrc: "./assets/img/cpu5.jpg",
+     category: "CPU",
     brand: " Intel",  
   },
   {
@@ -52,6 +58,7 @@ let productCPU = [
     desc:
       "Intel Core i5-12600K Alder Lake 3.7GHz Ten-Core LGA 1700 Boxed Processor - Heatsink Not Included",
     imgSrc: "./assets/img/cpu6.jpg",
+     category: "CPU",
     brand: "Intel ",  
   },
   {
@@ -61,6 +68,7 @@ let productCPU = [
     desc:
       "AMD Ryzen 7 5800X3D Vermeer 3.4GHz 8-Core AM4 Boxed Processor - Cooler Not Included",
     imgSrc: "./assets/img/cpu7.jpg",
+     category: "CPU",
     brand: " AMD",  
   },
   {
@@ -70,6 +78,7 @@ let productCPU = [
     desc:
       "AMD Ryzen 5 5600X Vermeer 3.7GHz 6-Core AM4 Boxed Processor - Wraith Stealth Cooler Included",
     imgSrc: "./assets/img/cpu8.jpg",
+     category: "CPU",
     brand: "AMD ",  
   },
   
@@ -84,6 +93,7 @@ let productMB = [
     desc:
       "ASUS Z790-E ROG Strix Gaming WiFi Intel LGA 1700 ATX Motherboard",
     imgSrc: "./assets/img/mb1.jpg",
+    category: "Motherboard",
     brand: "ASUS ",  
   },
   {
@@ -94,6 +104,7 @@ let productMB = [
     desc:
       "ASUS Z790 ROG Maximus Hero Intel LGA 1700 ATX Motherboard",
     imgSrc: "./assets/img/mb2.jpg",
+    category: "Motherboard",
     brand: "ASUS ",  
   },
   {
@@ -104,6 +115,7 @@ let productMB = [
     desc:
       "ASUS X670E-PLUS TUF GAMING WIFI ATX Motherboard",
     imgSrc: "./assets/img/mb3.jpg",
+    category: "Motherboard",
     brand: "ASUS ",  
   },
   {
@@ -114,6 +126,7 @@ let productMB = [
     desc:
       "Gigabyte B650 AORUS Elite AX AMD AM5 ATX Motherboard ",
     imgSrc: "./assets/img/mb4.jpg",
+    category: "Motherboard",
     brand: "Gigabyte ",  
   },
   {
@@ -124,6 +137,7 @@ let productMB = [
     desc:
       "ASUS X570 TUF Gaming Plus (WIFI) AMD AM4 ATX Motherboard",
     imgSrc: "./assets/img/mb5.jpg",
+    category: "Motherboard",
     brand: "ASUS ",  
   },
   {
@@ -133,6 +147,7 @@ let productMB = [
     desc:
       "ASUS X670E-E ROG Strix Gaming WiFi AMD AM5 ATX Motherboard",
     imgSrc: "./assets/img/mb6.jpg",
+    category: "Motherboard",
     brand: "ASUS ",  
   },
   {
@@ -142,6 +157,7 @@ let productMB = [
     desc:
       "ASUS Z790-PLUS TUF Gaming WiFi D4 Intel LGA 1700 ATX Motherboard",
     imgSrc: "./assets/img/mb7.jpg",
+    category: "Motherboard",
     brand: "ASUS ",  
   },
   {
@@ -151,6 +167,7 @@ let productMB = [
     desc:
       "ASUS Z790-A ROG Strix Gaming WiFi D4 Intel LGA 1700 ATX Motherboard",
     imgSrc: "./assets/img/mb8.jpg",
+    category: "Motherboard",
     brand: "ASUS ",  
   },
 ];
@@ -165,6 +182,7 @@ let productRAM = [
     desc:
       "Corsair Vengeance RGB 32GB (2 x 16GB) DDR5-5600 PC5-44800 CL36 Dual Channel Desktop Memory Kit CMH32GX5M2B56K",
     imgSrc: "./assets/img/ram1.jpg",
+    category: "RAM",
     brand: "Corsair ",  
   },
   {
@@ -175,6 +193,7 @@ let productRAM = [
     desc:
       "Corsair Vengeance RGB 32GB (2 x 16GB) DDR5-5600 PC5-44800 CL36 Dual Channel Desktop Memory Kit CMH32GX5M2B56WK - White ",
     imgSrc: "./assets/img/ram2.jpg",
+    category: "RAM",
     brand: "Corsair ",  
   },
   {
@@ -185,6 +204,7 @@ let productRAM = [
     desc:
       "G.Skill Ripjaws S5 64GB (2 x 32GB) DDR5-5200 PC5-41600 CL36 Dual Channel Desktop Memory Kit F5-5200J3636D32GX2-RS5K ",
     imgSrc: "./assets/img/ram3.jpg",
+    category: "RAM",
     brand: "G.Skill ",  
   },
   {
@@ -195,6 +215,7 @@ let productRAM = [
     desc:
       "Crucial 16GB (2 x 8GB) DDR5-4800 PC5-38400 CL40 Dual Channel Desktop Memory Kit CT2K8G48C40U5",
     imgSrc: "./assets/img/ram4.jpg",
+    category: "RAM",
     brand: "Crucial",  
   },
   {
@@ -205,6 +226,7 @@ let productRAM = [
     desc:
       "Corsair Vengeance RGB 64GB (2 x 32GB) DDR5-5600 PC5-44800 CL40 Dual Channel Desktop Memory Kit CMH64GX5M2B5600 - Black ",
     imgSrc: "./assets/img/ram5.jpg",
+    category: "RAM",
     brand: "Corsair ",  
   },
   {
@@ -214,6 +236,7 @@ let productRAM = [
     desc:
       "Corsair Vengeance RGB 64GB (2 x 32GB) DDR5-5200 PC5-41600 CL40 Dual Channel Desktop Memory Kit CMH64GX5M2B5200 - Black",
     imgSrc: "./assets/img/ram6.jpg",
+    category: "RAM",
     brand: "Corsair ",  
   },
   {
@@ -223,6 +246,7 @@ let productRAM = [
     desc:
       "Corsair Vengeance RGB 32GB (2 x 16GB) DDR5-5200 PC5-41600 CL40 Dual Channel Desktop Memory Kit CMH32GX5M2B520 - Black ",
     imgSrc: "./assets/img/ram7.jpg",
+    category: "RAM",
     brand: "Corsair ",  
   },
   {
@@ -232,6 +256,7 @@ let productRAM = [
     desc:
       "Corsair Vengeance 32GB (2 x 16GB) DDR5-5600 PC5-44800 CL36 Dual Channel Desktop Memory Kit CMK32GX5M2B5600 - Black ",
     imgSrc: "./assets/img/ram8.jpg",
+    category: "RAM",
     brand: "Corsair ",  
   },
 ];  
@@ -245,6 +270,7 @@ let productCASE = [
     desc:
       "Lian Li LANCOOL III RGB Tempered Glass ATX Mid-Tower Computer Case - Black",
     imgSrc: "./assets/img/case1.jpg",
+    category: "PC CASE",
     brand: "Lian Li ",  
   },
   {
@@ -255,6 +281,7 @@ let productCASE = [
     desc:
       "Lian Li Lancool II MESH Type C RGB Tempered Glass ATX Mid-Tower Computer Case",
     imgSrc: "./assets/img/case2.jpg",
+    category: "PC CASE",
     brand: "Lian Li",  
   },
   {
@@ -265,6 +292,7 @@ let productCASE = [
     desc:
       "Lian Li O11 Dynamic EVO Tempered Glass ATX Mid-Tower Computer Case",
     imgSrc: "./assets/img/case3.jpg",
+    category: "PC CASE",
     brand: "Lian Li ",  
   },
   {
@@ -275,6 +303,7 @@ let productCASE = [
     desc:
       "Lian Li Lancool 215 Tempered Glass eATX Full Tower Computer Case",
     imgSrc: "./assets/img/case4.jpg",
+    category: "PC CASE",
     brand: "Lian Li ",  
   },
   {
@@ -285,6 +314,7 @@ let productCASE = [
     desc:
       "Lian Li Lancool II MESH Type C RGB Tempered Glass ATX Mid-Tower Computer Case - Snow White",
     imgSrc: "./assets/img/case5.jpg",
+    category: "PC CASE",
     brand: "Lian Li ",  
   },
   {
@@ -294,6 +324,7 @@ let productCASE = [
     desc:
       "NZXT H5 Flow Tempered Glass ATX Mid-Tower Computer Case - Black",
     imgSrc: "./assets/img/case6.jpg",
+    category: "PC CASE",
     brand: "NZXT ",  
   },
   {
@@ -303,6 +334,7 @@ let productCASE = [
     desc:
       "Lian Li PC-O11 Dynamic Tempered Glass ATX Mid-Tower Computer Case - Black",
     imgSrc: "./assets/img/case7.jpg",
+    category: "PC CASE",
     brand: "Lian ",  
   },
   {
@@ -312,6 +344,7 @@ let productCASE = [
     desc:
       "Montech X1 Tempered Glass ATX Mid-Tower Computer Case - Black",
     imgSrc: "./assets/img/case8.jpg",
+    category: "PC CASE",
     brand: "Montech",  
   },
 ];  
@@ -325,6 +358,7 @@ let productPSU = [
     desc:
       "Corsair RMx Series RM850x 850 Watt 80 Plus Gold ATX Fully Modular Power Supply",
     imgSrc: "./assets/img/psu1.jpg",
+    category: "POWER SUPPLY",
     brand: "Corsair ",  
   },
   {
@@ -335,6 +369,7 @@ let productPSU = [
     desc:
       "Corsair RMx Series RM1000x 1000 Watt 80 Plus Gold ATX Fully Modular Power Supply",
     imgSrc: "./assets/img/psu2.jpg",
+    category: "POWER SUPPLY",
     brand: "Corsair ",  
   },
   {
@@ -345,6 +380,7 @@ let productPSU = [
     desc:
       "EVGA SuperNOVA 750 GT 750 Watt 80 Plus Gold ATX Fully Modular Power Supply",
     imgSrc: "./assets/img/psu3.jpg",
+    category: "POWER SUPPLY",
     brand: "EVGA ",  
   },
   {
@@ -355,6 +391,7 @@ let productPSU = [
     desc:
       "Corsair RM850e 850 Watt 80 Plus Gold Fully Modular Low-Noise ATX Power Supply",
     imgSrc: "./assets/img/psu4.jpg",
+    category: "POWER SUPPLY",
     brand: "Corsair ",  
   },
   {
@@ -365,6 +402,7 @@ let productPSU = [
     desc:
       "EVGA SuperNOVA 850 GT 850 Watt 80 Plus Gold ATX Fully Modular Power Supply",
     imgSrc: "./assets/img/psu5.jpg",
+    category: "POWER SUPPLY",
     brand: " EVGA",  
   },
   {
@@ -374,6 +412,7 @@ let productPSU = [
     desc:
       "Corsair RMe Series RM1000e Fully Modular 80PLUS Gold ATX Power Supply",
     imgSrc: "./assets/img/psu6.jpg",
+    category: "POWER SUPPLY",
     brand: "Corsair ",  
   },
   {
@@ -383,6 +422,7 @@ let productPSU = [
     desc:
       "Thermaltake Smart Series 500 Watt 80 Plus ATX Non-Modular Power Supply",
     imgSrc: "./assets/img/psu7.jpg",
+    category: "POWER SUPPLY",
     brand: "Thermaltake ",  
   },
   {
@@ -392,6 +432,7 @@ let productPSU = [
     desc:
       "ASUS ROG Thor Platinum II 1000 Watt 80 Plus Platinum ATX Fully Modular Power Supply",
     imgSrc: "./assets/img/psu8.jpg",
+    category: "POWER SUPPLY",
     brand: "ASUS ",  
   },
 ];  
@@ -405,6 +446,7 @@ let productGPU = [
     desc:
       "Zotac NVIDIA GeForce RTX 4070 Ti Trinity Overclocked Triple Fan 12GB GDDR6X PCIe 4.0 Graphics Card",
     imgSrc: "./assets/img/gpu1.jpg",
+    category: "GRAPHICS CARD",
     brand: "Zotac ",  
   },
   {
@@ -415,6 +457,7 @@ let productGPU = [
     desc:
       "MSI NVIDIA GeForce RTX 4070 Ti Ventus 3X Overclocked Triple Fan 12GB GDDR6X PCIe 4.0 Graphics Card ",
     imgSrc: "./assets/img/gpu2.jpg",
+    category: "GRAPHICS CARD",
     brand: "MSI ",  
   },
   {
@@ -425,6 +468,7 @@ let productGPU = [
     desc:
       "ASUS NVIDIA GeForce RTX 3070 Ti TUF Gaming V2 Overclocked Triple Fan 8GB GDDR6X PCIe 4.0 Graphics Card",
     imgSrc: "./assets/img/gpu3.jpg",
+    category: "GRAPHICS CARD",
     brand: "ASUS ",  
   },
   {
@@ -435,6 +479,7 @@ let productGPU = [
     desc:
       "MSI NVIDIA GeForce RTX 4070 Ti Gaming Trio Triple Fan 12GB GDDR6X PCIe 4.0 Graphics Card",
     imgSrc: "./assets/img/gpu4.jpg",
+    category: "GRAPHICS CARD",
     brand: "MSI ",  
   },
   {
@@ -445,6 +490,7 @@ let productGPU = [
     desc:
       "Gigabyte NVIDIA GeForce RTX 4070 Ti Aero Overclocked Triple Fan 12GB GDDR6X PCIe 4.0 Graphics Card",
     imgSrc: "./assets/img/gpu5.jpg",
+    category: "GRAPHICS CARD",
     brand: "Gigabyte ",  
   },
   {
@@ -454,6 +500,7 @@ let productGPU = [
     desc:
       "Zotac NVIDIA GeForce RTX 4080 Trinity Overclocked Triple Fan 16GB GDDR6X PCIe 4.0 Graphics Card",
     imgSrc: "./assets/img/gpu6.jpg",
+    category: "GRAPHICS CARD",
     brand: "Zotac",  
   },
   {
@@ -463,6 +510,7 @@ let productGPU = [
     desc:
       "PowerColor AMD Radeon RX 6600 Fighter Dual-Fan 8GB GDDR6 PCIe 4.0 Graphics Card",
     imgSrc: "./assets/img/gpu7.jpg",
+    category: "GRAPHICS CARD",
     brand: " PowerColor",  
   },
   {
@@ -472,6 +520,7 @@ let productGPU = [
     desc:
       "PowerColor AMD Radeon RX 6700 XT Fighter Dual-Fan 12GB GDDR6 PCIe 4.0 Graphics Card",
     imgSrc: "./assets/img/gpu8.jpg",
+    category: "GRAPHICS CARD",
     brand: "PowerColor ",  
   },
 ];
@@ -485,6 +534,7 @@ let productSATA = [
     desc:
       "Inland Professional 512GB SSD 3D TLC NAND SATA 3.0 6 GBps 2.5 Inch 7mm Internal Solid State Drive",
     imgSrc: "./assets/img/sata1.jpg",
+    category: "SATA SSD",
     brand: "Inland ",  
   },
   {
@@ -495,6 +545,7 @@ let productSATA = [
     desc:
       "Samsung 870 EVO 2TB SSD 3-bit MLC V-NAND SATA III 6Gb/s 2.5 Internal Solid State Drive",
     imgSrc: "./assets/img/sata2.jpg",
+    category: "SATA SSD",
     brand: "Samsung ",  
   },
   {
@@ -505,6 +556,7 @@ let productSATA = [
     desc:
       "Samsung 870 EVO 1TB SSD 3-bit MLC V-NAND SATA III 6Gb/s 2.5",
     imgSrc: "./assets/img/sata3.jpg",
+    category: "SATA SSD",
     brand: "Samsung ",  
   },
   {
@@ -515,6 +567,7 @@ let productSATA = [
     desc:
       "Inland Platinum 1TB SSD 3D TLC NAND SATA III 6Gb/s 2.5 Internal Solid State Drive",
     imgSrc: "./assets/img/sata4.jpg",
+    category: "SATA SSD",
     brand: "Inland ",  
   },
   {
@@ -525,6 +578,7 @@ let productSATA = [
     desc:
       "Inland Professional 1TB SSD 3D NAND SATA 3.0 6 GBps 2.5 Inch 7mm Internal Solid State Drive",
     imgSrc: "./assets/img/sata5.jpg",
+    category: "SATA SSD",
     brand: "Inland ",  
   },
   {
@@ -534,6 +588,7 @@ let productSATA = [
     desc:
       "Samsung 870 EVO 500GB SSD 3-bit MLC V-NAND SATA III 6Gb/s 2.5 Internal Solid State Drive ",
     imgSrc: "./assets/img/sata6.jpg",
+    category: "SATA SSD",
     brand: "Samsung ",  
   },
   {
@@ -543,6 +598,7 @@ let productSATA = [
     desc:
       "Inland Professional 256GB SSD 3D TLC NAND SATA 3.0 6 GBps 2.5 Inch 7mm Internal Solid State Drive ",
     imgSrc: "./assets/img/sata7.jpg",
+    category: "SATA SSD",
     brand: "Inland ",  
   },
   {
@@ -552,6 +608,7 @@ let productSATA = [
     desc:
       "Crucial MX500 4TB 3D TLC NAND SATA 3.0 6.0 GB/s 2.5 Internal SSD",
     imgSrc: "./assets/img/sata8.jpg",
+    category: "SATA SSD",
     brand: "Crucial ",  
   },
 ];
@@ -565,6 +622,7 @@ let productNVME = [
     desc:
       "Samsung 980 Pro SSD 1TB M.2 NVMe Interface PCIe Gen 4x4 Internal Solid State Drive with V-NAND 3 bit MLC Technology (MZ-V8P1T0B)",
     imgSrc: "./assets/img/nvme1.jpg",
+    category: "M.2 NVME SSD",
     brand: "Samsung ",  
   },
   {
@@ -575,6 +633,7 @@ let productNVME = [
     desc:
       "Samsung 970 EVO Plus SSD 1TB M.2 NVMe Interface PCIe 3.0 x4 Internal Solid State Drive with V-NAND 3 bit MLC Technology (MZ-V7S1T0B/AM)",
     imgSrc: "./assets/img/nvme2.jpg",
+    category: "M.2 NVME SSD",
     brand: "Samsung ",  
   },
   {
@@ -585,6 +644,7 @@ let productNVME = [
     desc:
       "Samsung 990 PRO 2TB Samsung V NAND 3-bit MLC PCIe Gen 4 x4 NVMe M.2 Internal SSD",
     imgSrc: "./assets/img/nvme3.jpg",
+    category: "M.2 NVME SSD",
     brand: "Samsung ",  
   },
   {
@@ -595,6 +655,7 @@ let productNVME = [
     desc:
       "Inland Performance Plus 2TB 3D TLC NAND PCIe Gen 4 x4 NVMe M.2 Internal SSD ",
     imgSrc: "./assets/img/nvme4.jpg",
+    category: "M.2 NVME SSD",
     brand: "Inland ",  
   },
   {
@@ -605,6 +666,7 @@ let productNVME = [
     desc:
       "Samsung 970 EVO Plus SSD 2TB M.2 NVMe Interface PCIe 3.0 x4 Internal Solid State Drive with V-NAND 3 bit MLC Technology (MZ-V7S2T0B/AM) ",
     imgSrc: "./assets/img/nvme5.jpg",
+    category: "M.2 NVME SSD",
     brand: "Samsung ",  
   },
   {
@@ -614,6 +676,7 @@ let productNVME = [
     desc:
       "Inland QN322 1TB SSD NVMe PCIe Gen 3.0x4 M.2 2280 3D NAND QLC Internal Solid State Drive ",
     imgSrc: "./assets/img/nvme6.jpg",
+    category: "M.2 NVME SSD",
     brand: "Inland ",  
   },
   {
@@ -623,6 +686,7 @@ let productNVME = [
     desc:
       "Inland Performance Plus 4TB 3D TLC NAND PCIe Gen 4 x4 NVMe M.2 Internal SSD ",
     imgSrc: "./assets/img/nvme7.jpg",
+    category: "M.2 NVME SSD",
     brand: "Inland ",  
   },
   {
@@ -632,6 +696,7 @@ let productNVME = [
     desc:
       "Inland Performance 2TB 3D TLC NAND PCIe Gen 4 x4 NVMe M.2 Internal SSD ",
     imgSrc: "./assets/img/nvme8.jpg",
+    category: "M.2 NVME SSD",
     brand: "Inland ",  
   },
 ];
@@ -645,6 +710,7 @@ let productHDD = [
     desc:
       "Seagate BarraCuda 2TB 7200RPM SATA III 6Gb/s 3.5 Internal SMR Hard Drive",
     imgSrc: "./assets/img/hdd1.jpg",
+    category: "HARD DRIVE",
     brand: "Seagate",  
   },
   {
@@ -655,6 +721,7 @@ let productHDD = [
     desc:
       "Toshiba N300 4TB 7200RPM SATA III 6Gb/s 3.5 Internal NAS CMR Hard Drive",
     imgSrc: "./assets/img/hdd2.jpg",
+    category: "HARD DRIVE",
     brand: "Toshiba ",  
   },
   {
@@ -665,6 +732,7 @@ let productHDD = [
     desc:
       "Toshiba N300 14TB 7200RPM SATA III 6Gb/s 3.5 Internal NAS CMR Hard Drive",
     imgSrc: "./assets/img/hdd3.jpg",
+    category: "HARD DRIVE",
     brand: "Toshiba",  
   },
   {
@@ -675,6 +743,7 @@ let productHDD = [
     desc:
       "WD Purple 2TB 5400RPM SATA III 6Gb/s 3.5 Surveillance Internal CMR Hard Drive",
     imgSrc: "./assets/img/hdd4.jpg",
+    category: "HARD DRIVE",
     brand: "WD Purple ",  
   },
   {
@@ -685,6 +754,7 @@ let productHDD = [
     desc:
       "Seagate FireCuda 4TB 7200RPM SATA III 6Gb/s 3.5 Internal CMR Hard Drive",
     imgSrc: "./assets/img/hdd5.jpg",
+    category: "HARD DRIVE",
     brand: "Seagate ",  
   },
   {
@@ -694,6 +764,7 @@ let productHDD = [
     desc:
       "Toshiba N300 Pro 12TB 7200RPM SATA III 6Gb/s 3.5 Internal NAS CMR Hard Drive",
     imgSrc: "./assets/img/hdd6.jpg",
+    category: "HARD DRIVE",
     brand: "Toshiba ",  
   },
   {
@@ -703,6 +774,7 @@ let productHDD = [
     desc:
       "WD Red Plus 8TB 5640RPM SATA III 6Gb/s 3.5 Internal NAS CMR Hard Drive ",
     imgSrc: "./assets/img/hdd7.jpg",
+    category: "HARD DRIVE",
     brand: "WD ",  
   },
   {
@@ -712,6 +784,7 @@ let productHDD = [
     desc:
       "Toshiba N300 Pro 4TB 7200RPM SATA III 6Gb/s 3.5 Internal NAS CMR Hard Drive",
     imgSrc: "./assets/img/hdd8.jpg",
+    category: "HARD DRIVE",
     brand: "Toshiba",  
   },
 ];
@@ -725,6 +798,7 @@ let productMON = [
     desc:
       "Dell SE2422H 23.8 inches Full HD (1920 x 1080) 75Hz LED Monitor; FreeSync; VGA HDMI; Flicker-Free",
     imgSrc: "./assets/img/mon1.jpg",
+    category: "MONITOR",
     brand: "Dell ",  
   },
   {
@@ -735,6 +809,7 @@ let productMON = [
     desc:
       "ASUS TUF Gaming VG27VH1BR 27 inches FUll HD (1920 x 1080) 165Hz Curved Screen Gaming Monitor; AMD FreeSync; HDR; HDMI VGA; Game Mode ",
     imgSrc: "./assets/img/mon2.jpg",
+    category: "MONITOR",
     brand: "ASUS ",  
   },
   {
@@ -745,6 +820,7 @@ let productMON = [
     desc:
       "ASUS VG32AQL1A 31.5 inches 2K QHD (2560 x 1440) 170Hz Gaming Monitor; FreeSync; / NVIDIA G-Sync Compatible; HDR; HDMI, DisplayPort ",
     imgSrc: "./assets/img/mon3.jpg",
+    category: "MONITOR",
     brand: "ASUS ",  
   },
   {
@@ -755,6 +831,7 @@ let productMON = [
     desc:
       "Vizta V24CDH2 23.8 inches Full HD (1920 x 1080) 75Hz LED Monitor; FreeSync; VGA HDMI; 3-Sided Frameless; IPS Panel",
     imgSrc: "./assets/img/mon4.jpg",
+    category: "MONITOR",
     brand: "Vizta ",  
   },
   {
@@ -765,6 +842,7 @@ let productMON = [
     desc:
       "Dell S2421HS 24 inches Full HD (1920 x 1080) 75Hz LED Monitor; FreeSync; HDMI Displayport; Blue Light Filter; Flicker-Free",
     imgSrc: "./assets/img/mon5.jpg",
+    category: "MONITOR",
     brand: "Dell ",  
   },
   {
@@ -774,6 +852,7 @@ let productMON = [
     desc:
       "Samsung LC32R500FH 31.5 inches Full HD (1920 x 1080) 75Hz Curved Screen Monitor (Refurbished); AMD FreeSync; VGA HDMI; Flicker-Free; 3-Sided Borderless",
     imgSrc: "./assets/img/mon6.jpg",
+    category: "MONITOR",
     brand: "Samsung ",  
   },
   {
@@ -783,6 +862,7 @@ let productMON = [
     desc:
       "AOC 22E1H 21.5 inches Full HD (1920 x 1080) 60Hz LED Monitor; HDMI VGA; Flicker Safe; Built-in KVM",
     imgSrc: "./assets/img/mon7.jpg",
+    category: "MONITOR",
     brand: "AOC ",  
   },
   {
@@ -792,6 +872,7 @@ let productMON = [
     desc:
       "AOC CQ27G3S 27 inches 2K QHD (2560 x 1440) 165Hz Curved Screen Gaming Monitor; AMD FreeSync; HDMI, DisplayPort; Flicker-Free; Blue Light Filter ",
     imgSrc: "./assets/img/mon8.jpg",
+    category: "MONITOR",
     brand: "AOC ",  
   },
 ];
@@ -805,6 +886,7 @@ let productKB = [
     desc:
       "Razer Ornata V3 Low-profile Mecha-membrane Gaming Keyboard",
     imgSrc: "./assets/img/kb1.jpg",
+    category: "KEYBOARD",
     brand: "Razer ",  
   },
   {
@@ -815,6 +897,7 @@ let productKB = [
     desc:
       "Glorious GMMK PRO 75% Barebone ANSI USA - Black Slate",
     imgSrc: "./assets/img/kb2.jpg",
+    category: "KEYBOARD",
     brand: "Glorious ",  
   },
   {
@@ -825,6 +908,7 @@ let productKB = [
     desc:
       "Redragon Devarajas K556 RGB Mechanical Gaming Keyboard - Brown ",
     imgSrc: "./assets/img/kb3.jpg",
+    category: "KEYBOARD",
     brand: "Redragon ",  
   },
   {
@@ -835,6 +919,7 @@ let productKB = [
     desc:
       "Corsair K55 RGB PRO Gaming Keyboard, Backlit RGB LED, Black",
     imgSrc: "./assets/img/kb4.jpg",
+    category: "KEYBOARD",
     brand: "Corsair ",  
   },
   
@@ -849,6 +934,7 @@ let productMOUSE = [
     desc:
       "Logitech MX Master 3s",
     imgSrc: "./assets/img/mouse1.jpg",
+    category: "MOUSE",
     brand: " Logitech",  
   },
   {
@@ -859,6 +945,7 @@ let productMOUSE = [
     desc:
       "Razer Basilisk V3 Ergonomic Wired Gaming Mouse",
     imgSrc: "./assets/img/mouse2.jpg",
+    category: "MOUSE",
     brand: "Razer ",  
   },
   {
@@ -869,6 +956,7 @@ let productMOUSE = [
     desc:
       "Corsair Harpoon RGB Wireless Gaming Mouse",
     imgSrc: "./assets/img/mouse3.jpg",
+    category: "MOUSE",
     brand: "Corsair ",  
   },
   {
@@ -879,6 +967,7 @@ let productMOUSE = [
     desc:
       "Redragon M801P Sniper Pro RGB Wired/ Wireless Gaming Mouse",
     imgSrc: "./assets/img/mouse4.jpg",
+    category: "MOUSE",
     brand: "Redragon ",  
   },
 ];
@@ -892,6 +981,7 @@ let productHEADSET = [
   desc:
     "Corsair Void RGB Elite Wireless Gaming Headset; Omnidirectional Microphone, 7.1 Surround Sound - Carbon",
   imgSrc: "./assets/img/headset1.jpg",
+  category: "MOUSE",
   brand: " Corsair",  
 },
 {
@@ -902,6 +992,7 @@ let productHEADSET = [
   desc:
     "Logitech G G435 LIGHTSPEED Wireless Gaming Headset Black and Neon Yellow",
   imgSrc: "./assets/img/headset2.jpg",
+  category: "MOUSE",
   brand: "Logitech ",  
 },
 {
@@ -912,6 +1003,7 @@ let productHEADSET = [
   desc:
     "HyperX Cloud II Gaming Headset Black-Red",
   imgSrc: "./assets/img/headset3.jpg",
+  category: "MOUSE",
   brand: " HyperX",  
 },
 {
@@ -922,6 +1014,7 @@ let productHEADSET = [
   desc:
     "Razer Barracuda X Wireless Multi-platform Gaming and Mobile Headset",
   imgSrc: "./assets/img/headset4.jpg",
+  category: "MOUSE",
   brand: "Razer ",  
 },
 ];

@@ -20,22 +20,24 @@ let generateCartItems = () => {
       let search = productsALL.find((y)=> y.id === id) || [];
       return `
       
-      <div class="card border-dark rounded mb-3 " style="width: 18rem;">
-        <img style="width:150px;" src=${search.imgSrc} class="card-img-top text-center" alt=${search.imgSrc}>
-        <div class="card-body">
-          <h5 class="card-title">${search.name}</h5>
-          <p class="card-text">${search.desc}</p>
-        </div>
-        <ul class="list-group list-group-flush">
-           <li class="list-group-item">₱${(parseFloat(item) * parseFloat(search.price)).toLocaleString()}</li>
-           <li class="list-group-item">Quantity: <i onclick="increment(${id})" class="bi bi-plus-square"></i><span id="${id}">
-            ${item}
-           </span><i onclick="decrement(${id})" class="bi bi-dash-square"></i></li>
-        </ul>
-        <div class="card-body">
-          <a onclick="removeItem(${id})" class="btn btn-danger mx-3">Remove</a>
-        </div>
+      <div class="card border-dark rounded mb-3" style="width: 18rem;">
+      <img style="width:150px;" src=${search.imgSrc} class="card-img-top mx-auto d-block" alt=${search.imgSrc}>
+      <div class="card-body">
+        <h5 class="card-title">${search.name}</h5>
+        <p class="card-text">${search.desc}</p>
       </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item fw-bold">Unit Price: ₱${search.price.toLocaleString()}</li>
+        <li class="list-group-item">Quantity: <i onclick="increment(${id})" class="bi bi-plus-square"></i><span id="${id}">
+          ${item}
+        </span><i onclick="decrement(${id})" class="bi bi-dash-square"></i></li>
+        <li class="list-group-item">Total: ₱${(parseFloat(item) * parseFloat(search.price)).toLocaleString()}</li>
+      </ul>
+      <div class="card-body">
+        <a onclick="removeItem(${id})" class="btn btn-danger mx-3">Remove</a>
+      </div>
+    </div>
+    
 
       `;
     } ).join("");
