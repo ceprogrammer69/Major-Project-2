@@ -866,7 +866,7 @@ let TotalAmount = () => {
     <h4>Build List</h4>
     <div class="col-12 d-flex text-center">
       <div class="col-12 text-start">
-        <button type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Build</button>
+        <button onclick="clearCart()"  type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Build</button>
        </div> 
     </div>
 
@@ -881,7 +881,7 @@ let TotalAmount = () => {
     <h4>Build List</h4>
     <div class="col-12 d-flex text-center">
       <div class="col-12 text-start">
-        <button type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Build</button>
+        <button onclick="clearCart()" type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Build</button>
       </div> 
     </div>
 
@@ -890,11 +890,19 @@ let TotalAmount = () => {
       </h3> <p><h3>Cart has no item</h3></p>
       <button type="button" class="btn btn-secondary mb-1 muted">PROCEED TO CHECKOUT</button>
     </div>
+    
     `;
 
   }
 };
 TotalAmount();
+
+let clearCart = () => {
+  basket = [];
+  generateProductModal();
+  localStorage.setItem("data", JSON.stringify(basket));
+};
+
 
 
 

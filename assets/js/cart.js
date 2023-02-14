@@ -37,18 +37,28 @@ let generateCartItems = () => {
         <a onclick="removeItem(${id})" class="btn btn-danger mx-3">Remove</a>
       </div>
     </div>
-    
+
 
       `;
     } ).join("");
   }
   else{
     shoppingCart.innerHTML = `
-    <p class="text m-0">No Items in your cart</p>
+    <p class="text m-0"><h2>No Items in your cart</h2></p>
     `;
     label.innerHTML = ` 
-    <p class="text m-0">Cart(<span>0</span> items): <span>₱ 0.00</span></p>
-        <button class="btn btn-outline-dark disabled">Checkout</button>
+    <h4>Build List</h4>
+    <div class="col-12 d-flex text-center">
+      <div class="col-12 text-start">
+        <button type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Build</button>
+      </div> 
+    </div>
+
+    <div class="col-12 text-center">
+      <h3>Build Total: 
+      </h3> <p><h3>Cart has no item</h3></p>
+      <button type="button" class="btn btn-secondary mb-1 muted">CHECKOUT</button>
+    </div>
     `;
 
   }
@@ -124,11 +134,26 @@ let TotalAmount = () => {
     }).reduce((x,y)=>x+y,0);
     // console.log(amount);
     label.innerHTML = `
-       <h2><p class="text m-0">Total Price: <span>₱${amount.toLocaleString()}</span></p></h2>
-       <button class="btn btn-outline-dark">Checkout</button>
+    <h4>Build List</h4>
+    <div class="col-12 d-flex text-center">
+      <div class="col-12 text-start">
+        <button onclick="clearCart()"  type="button" class="btn btn-danger btn-sm m-2" id="clear-build">Clear Cart</button>
+       </div> 
+    </div>
+
+    <div class="col-12 text-center">
+    <h3>Build Total: </h3> <p h3>₱${amount.toLocaleString()}</h3></p>
+      <a href="cart.html"><button type="button" class="btn btn-success mb-1">PROCEED TO CHECKOUT</button></a>
+    </div>
     `;
   }
   else return ;
 };
 TotalAmount();
+
+let clearCart = () => {
+  basket = [];
+  generateProductModal();
+  localStorage.setItem("data", JSON.stringify(basket));
+};
 
